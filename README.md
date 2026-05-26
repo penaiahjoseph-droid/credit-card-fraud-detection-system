@@ -1,87 +1,162 @@
 # credit-card-fraud-detection-system
-Project Overview
+## 📌 Project Overview
+This project focuses on analyzing credit card transactions to identify fraudulent activities and understand transaction risk patterns using Python, Data Analysis, and Machine Learning.
 
-This project focuses on Credit Card Fraud Detection and Transaction Analysis using Python and Machine Learning.
-The dataset is analyzed to identify fraud patterns, visualize transaction behavior, and build a simple predictive model using Linear Regression.
+The dataset used is the famous Credit Card Fraud Detection dataset from Kaggle.
 
 The project includes:
+- Data preprocessing
+- Exploratory Data Analysis (EDA)
+- Fraud detection insights
+- Risk level classification
+- Linear Regression model
+- Data visualization using Matplotlib, Seaborn, and Plotly
 
-Data Cleaning
-Exploratory Data Analysis (EDA)
-Fraud vs Normal Transaction Analysis
-Risk Level Categorization
-Machine Learning Model
-Data Visualization using Matplotlib, Seaborn, and Plotly
-Technologies Used
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Plotly
-Scikit-learn
-KaggleHub
+---
 
-Features of the Project
- Data Preprocessing
-Loaded dataset using KaggleHub
-Removed duplicate records
-Checked missing values
-Statistical summary of data
- Exploratory Data Analysis
-Fraud vs Normal transaction count
-Transaction amount distribution
-Boxplots for outlier detection
-Correlation heatmap
-Scatter plots for Time vs Amount
- Risk Level Classification
+## 🚀 Features
+- ✅ Data Cleaning and Duplicate Removal
+- ✅ Fraud vs Normal Transaction Analysis
+- ✅ Risk Level Classification
+- ✅ Statistical Analysis
+- ✅ Correlation Heatmap
+- ✅ Interactive Visualizations
+- ✅ Linear Regression Model
+- ✅ Residual Analysis
+- ✅ Export Cleaned Dataset
 
-Transactions are categorized into:
+---
 
-Low Risk
-Medium Risk
-High Risk
+## 🛠️ Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Plotly
+- Scikit-learn
+- KaggleHub
 
-Based on transaction amount.
+---
 
- Machine Learning Model
+## 📂 Dataset
+Dataset Source: Credit Card Fraud Detection Dataset from Kaggle
 
-Implemented:
+```python
+path = kagglehub.dataset_download("mlg-ulb/creditcardfraud")
+```
 
-Linear Regression Model
+---
 
-Evaluation Metrics:
+## 📊 Exploratory Data Analysis
 
-R² Score
-Mean Squared Error (MSE)
- Interactive Visualizations
+The project includes multiple visualizations such as:
 
-Created interactive charts using Plotly:
+- Fraud vs Normal Transactions
+- Transaction Amount Distribution
+- Boxplots for Outlier Detection
+- Time vs Amount Scatter Plot
+- Correlation Heatmap
+- Risk Level Distribution
 
-Pie Chart
-Histogram
-Scatter Plot
-Bar Chart
+---
 
-Credit-Card-Fraud-Detection/
-│
-├── credit_card_fraud_detection.ipynb
-├── cleaned_creditcard_dataset.csv
-├── README.md
-└── requirements.txt
+## ⚠️ Risk Level Classification
 
-Sample Outputs
-Fraud Detection Analysis
-Transaction Distribution
-Risk Level Analysis
-Correlation Heatmaps
-ML Prediction Graphs
+Transactions are categorized based on amount:
 
-Future Improvements
-Implement advanced ML models:
-Random Forest
-XGBoost
-Logistic Regression
-Neural Networks
-Improve fraud prediction accuracy
-Deploy as a web application
+| Amount Range | Risk Level |
+|--------------|------------|
+| < 100 | Low Risk |
+| 100 - 999 | Medium Risk |
+| ≥ 1000 | High Risk |
+
+---
+
+## 🤖 Machine Learning Model
+
+A Linear Regression model is used to predict transaction amounts based on transaction time.
+
+### Model Evaluation Metrics
+- R² Score
+- Mean Squared Error (MSE)
+
+---
+
+## 📈 Visualizations
+
+Interactive charts are created using Plotly:
+- Pie Chart
+- Histogram
+- Scatter Plot
+- Bar Chart
+
+---
+
+## 📁 Output
+
+The cleaned dataset is exported as:
+
+```python
+cleaned_creditcard_dataset.csv
+```
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Install Required Libraries
+
+```bash
+pip install kagglehub plotly pandas numpy matplotlib seaborn scikit-learn
+```
+
+### 2️⃣ Run the Notebook / Script
+
+```bash
+python fraud_detection.py
+```
+
+---
+
+## 📌 Project Workflow
+
+1. Import Libraries
+2. Load Dataset
+3. Data Cleaning
+4. Exploratory Data Analysis
+5. Risk Classification
+6. Model Training
+7. Model Evaluation
+8. Data Visualization
+9. Export Dataset
+
+---
+
+## 📷 Sample Insights
+
+- Fraud transactions are extremely rare compared to normal transactions.
+- High-value transactions have higher fraud probability.
+- Transaction amount distribution is highly skewed.
+
+---
+
+## 🎯 Future Improvements
+
+- Implement Logistic Regression
+- Use Random Forest / XGBoost
+- Build Real-Time Fraud Detection System
+- Deploy with Streamlit or Flask
+- Add Deep Learning Models
+
+---
+
+## 👨‍💻 Author
+
+**Penaiah Joseph**
+
+---
+
+## ⭐ GitHub Tags
+
+`Python` `MachineLearning` `DataScience` `FraudDetection` `EDA` `Visualization` `ScikitLearn` `Plotly` `Pandas`
